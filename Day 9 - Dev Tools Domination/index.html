@@ -16,30 +16,38 @@
       p.style.color = '#BADA55';
       p.style.fontSize = '50px';
     }
+    const p = document.querySelector('p');
 
     // Regular
-
+    //console.log("test");
     // Interpolated
-
+    //console.log("test %s", "consolee");
     // Styled
-
+    console.log("%c test", "font-size:5px");
     // warning!
-
+    console.warn("test");
     // Error :|
-
+    console.error("test");
     // Info
-
+    console.info("test");
     // Testing
-
+    console.assert(1===2, "this is wrong");
     // clearing
-
+    console.clear();
     // Viewing DOM Elements
-
+    console.dir(p);
     // Grouping together
-
+    dogs.forEach(dog => {
+      //console.groupCollapsed(`${dog.name}`);
+      console.group(`${dog.name}`);
+      console.log(`This is ${dog.name}`)
+      console.groupEnd(`${dog.name}`);
+    });
     // counting
-
+    console.count("justin");
     // timing
+    console.time("sdsad");
+    console.timeEnd("sdad");
 
   </script>
 </body>
